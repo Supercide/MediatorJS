@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './lib/mediator.js',
+  entry: './lib/MessageContainer.js',
   module: {
     rules: [{
-            test: require.resolve('./lib/mediator'),
+            test: require.resolve('./lib/MessageContainer'),
             use: [{
                 loader: 'expose-loader',
                 options: 'mediator'

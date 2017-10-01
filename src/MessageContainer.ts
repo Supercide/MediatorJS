@@ -3,7 +3,7 @@ import { Message } from './Message';
 import { IMessageHandlerFactoryBase } from './IMessageHandlerFactoryBase';
 import { IMessageHandlerFactory } from './IMessageHandlerFactory';
 
-export class Mediator {
+export class MessageContainer {
 
     private _handlers: Dictionary<string, IMessageHandlerFactoryBase[]>;
 

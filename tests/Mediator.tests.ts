@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { Mediator   } from '../src/Mediator';
+import { MessageContainer   } from '../src/Mediator';
 import { IMessageHandler } from '../src/IMessageHandler';
 import { Message } from '../src/Message';
 
@@ -34,10 +34,10 @@ class TestModifyMessageHandler implements IMessageHandler<TestMessage> {
 
 describe('Mediator Tests', () => {
     
-    let mediator: Mediator;
+    let mediator: MessageContainer;
 
     beforeEach(() => {
-        mediator = new Mediator();       
+        mediator = new MessageContainer();       
         TestMessageHandler.messages = [];
         TestModifyMessageHandler.messages = [];
     });
