@@ -1,6 +1,8 @@
 import { expect } from 'chai';
 import * as sinon from 'sinon';
-import { IMessageHandler, Mediator, Message   } from '../src/Mediator';
+import { Mediator   } from '../src/Mediator';
+import { IMessageHandler } from '../src/IMessageHandler';
+import { Message } from '../src/Message';
 
 class TestMessage extends Message {
     message: string;

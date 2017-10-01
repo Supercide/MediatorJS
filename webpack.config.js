@@ -4,7 +4,7 @@ module.exports = {
   entry: './lib/mediator.js',
   module: {
     rules: [{
-            test: require.resolve('./lib/handle'),
+            test: require.resolve('./lib/mediator'),
             use: [{
                 loader: 'expose-loader',
                 options: 'mediator'
