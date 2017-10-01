@@ -1,10 +1,13 @@
 {
-  "name": "handlejs",
+  "name": "mediatorjs",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "dependencies": {
     "redux": "^3.7.2"
   },

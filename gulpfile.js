@@ -40,16 +40,16 @@ gulp.task('compile', ['patch', 'clean:all'], function () {
 });
 
 gulp.task('copy', ['compile', 'webpack'], function() {
-    gulp.src('./types/handle.d.ts')
+    gulp.src('./types/mediatorjs.d.ts')
         .pipe(gulp.dest('./lib/'))
 })
 
 gulp.task('webpack', ['compile'], function () {
 
-        return gulp.src('./lib/handle.js')
+        return gulp.src('./lib/mediatorjs.js')
             .pipe(webpack(require('./webpack.config.js')))
             .pipe(uglify())
-            .pipe(rename(`handle.min.js`))
+            .pipe(rename(`mediatorjs.min.js`))
             .pipe(gulp.dest(`dist/`));
     });
 
