@@ -1,18 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  entry: './lib/handle.js',
+  entry: './lib/mediator.js',
   module: {
     rules: [{
             test: require.resolve('./lib/handle'),
             use: [{
                 loader: 'expose-loader',
-                options: 'handle'
+                options: 'mediator'
             }]
         }]
   },
   output: {
-    filename: 'handle.js',
+    filename: 'mediator.js',
     path: path.resolve(__dirname, 'dist')
   }
 };
